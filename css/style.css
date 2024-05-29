@@ -1,0 +1,32 @@
+
+/* nav bar */
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: green;
+}
+
+
+/* portfolio cards */
+.row {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.project-item {
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    filter: brightness(90%);
+    .card-img-top{
+        filter: brightness(90%);
+    }
+}
+
+.card-attribution {
+    font-size: small;
+    font-style: italic;
+}
