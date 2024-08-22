@@ -60,6 +60,7 @@
 }
 
 .card-map-type {
+    font-size: small;
     position: absolute;
     top: 0;
     right: 0;
