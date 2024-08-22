@@ -1,3 +1,6 @@
+.row {
+    width: 100%;
+}
 
 /* nav bar */
 .nav-link {
@@ -7,6 +10,30 @@
 .nav-link:hover {
     color: green;
 }
+
+.nav-tabs .nav-item .nav-link.active {
+    color: green;
+    border-bottom: 4px solid #40A758;
+}
+
+
+
+/* Home Page Text */
+.body-text {
+    width: 50%;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px){
+    .body-text {
+       width: 70%;
+    }
+ }
+
+@media screen and (max-width: 1000px) {
+    .body-text {
+       width: 90%;
+    }
+ }
 
 
 /* portfolio cards */
@@ -21,12 +48,42 @@
 
 .card:hover {
     filter: brightness(90%);
-    .card-img-top{
-        filter: brightness(90%);
-    }
 }
 
 .card-attribution {
     font-size: small;
     font-style: italic;
+}
+
+.card-img-top {
+    position: relative;
+}
+
+.card-map-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1.5px dashed;
+    border-radius: 0px 5px 0px 5px;
+    border-color: gray;
+}
+
+.card-coming-soon {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform: rotate(-45deg);
+    color: rgb(184, 145, 38);
+    font-weight: bold;
+    font-size: xx-large;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* If card contains coming soon, blur card */
+.card:has(.card-coming-soon)>*:not(.card-coming-soon) { 
+    filter: blur(1.5px) brightness(70%);
 }
