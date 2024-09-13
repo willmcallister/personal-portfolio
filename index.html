@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <base href="/personal-portfolio/"/>
+        <!-- <base href="/"/> -->
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +49,45 @@
         <div class="container body-text">
             
             <!-- Simply set the `src` attribute to your MD file and win -->
-            <zero-md src="intro.md"></zero-md>
+            <!--<zero-md src="intro.md"></zero-md>-->
+            
+            <!-- Or update the style -->
+            <zero-md src="intro.md">
+                <!-- Wrap `style` tags inside `template` -->
+                <template data-append>
+                <style>
+                    h1, h3 {
+                        margin: 0px;
+                        text-decoration: underline;
+                        text-decoration-color: #7c7c7c;
+                        text-decoration-thickness: 0.1em;
+                        text-underline-offset: 0.1em;
+                    }
+                    p, li {
+                        font-family: 'Neutron';
+                        font-weight: 300;
+                        font-size: large;
+                        color: #212529;
+
+                        margin-top: 9px;
+                        margin-bottom: 9px;
+                    }
+                    a {
+                        color: #007BFF;
+                        font-weight: 600;
+                        text-decoration: none;
+                        
+                    }
+                    a:hover {
+                        color: #0058B6;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        text-decoration-style: dotted;
+                    }
+                </style>
+                </template>
+            </zero-md>
+
             
         </div>
 

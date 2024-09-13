@@ -1,6 +1,33 @@
+@font-face {
+    font-family: "BebasNeue";
+    src: url(/fonts/BebasNeue-Regular.ttf);
+}
+
+body {
+    font-family: Georgia;
+    background-color: #F3F4F2;
+}
+
 .row {
     width: 100%;
 }
+
+.navbar {
+    font-family: "BebasNeue";
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    font-family: "BebasNeue";
+    letter-spacing: 4px;
+    font-size: 30px;
+    color: #3D3D3C;
+}
+
+.navbar-brand:hover{
+    font-weight: bold;
+}
+
 
 /* nav bar */
 .nav-link {
@@ -8,12 +35,17 @@
 }
 
 .nav-link:hover {
-    color: green;
+    color: #3D3D3C;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-    color: green;
-    border-bottom: 4px solid #40A758;
+    color: #3D3D3C;
+    border-bottom: 4px solid #3D3D3C;
+}
+
+.nav-link
+{
+    color: #3D3D3C;
 }
 
 
@@ -40,14 +72,24 @@
 .row {
     padding-left: 50px;
     padding-right: 50px;
+    
 }
 
 .project-item {
     padding-bottom: 20px;
 }
 
+.card {
+    background-color: #FAFAFA;
+}
+
 .card:hover {
     filter: brightness(90%);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: medium;
 }
 
 .card-attribution {
@@ -65,7 +107,7 @@
     top: 0;
     right: 0;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(250, 250, 250, 0.9);
     border: 1.5px dashed;
     border-radius: 0px 5px 0px 5px;
     border-color: gray;
