@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <base href="/personal-portfolio/"/>
+        <!-- <base href="/"/> -->
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -21,24 +24,35 @@
         <div class="container">
             <nav class="navbar navbar-light mb-3">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/">Will McAllister</a>
+                    <a class="navbar-brand" href="">Will McAllister</a>
                 <ul class="nav nav-underline justify-content-end">
                     <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="/resume.html">Resume</a>
+                    <a class="nav-link active" href="resume.html">Resume</a>
                     </li>
                 </ul>
                 </div>
             </nav>
         </div>
-        
+
+        <div class="container body-text">
+            
+            <!-- Simply set the `src` attribute to your MD file and win -->
+            <zero-md src="resume.md"></zero-md>
+
+        </div>
+
         <!-- scripts -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+        <!-- Load the element definition -->
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
     </body>
 </html>

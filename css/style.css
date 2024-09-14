@@ -1,5 +1,6 @@
 @font-face {
     font-family: "BebasNeue";
+    /*src: url(personal-portfolio/fonts/BebasNeue-Regular.ttf);*/
     src: url(personal-portfolio/fonts/BebasNeue-Regular.ttf);
 }
 
@@ -53,6 +54,7 @@ body {
 /* Home Page Text */
 .body-text {
     width: 50%;
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1500px){
@@ -70,9 +72,7 @@ body {
 
 /* portfolio cards */
 .row {
-    padding-left: 50px;
-    padding-right: 50px;
-    
+    margin: 0;
 }
 
 .project-item {
@@ -81,6 +81,7 @@ body {
 
 .card {
     background-color: #FAFAFA;
+    
 }
 
 .card:hover {
