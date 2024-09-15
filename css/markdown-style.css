@@ -1,0 +1,31 @@
+h1, h2, h3, h4 {
+    margin: 0px;
+    margin-top: 1em;
+    text-decoration: underline;
+    text-decoration-color: #7c7c7c;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.1em;
+}
+
+p, li {
+    font-family: 'Neutron';
+    font-weight: 300;
+    font-size: large;
+    color: #212529;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+a {
+    color: #007BFF;
+    font-weight: 600;
+    text-decoration: none
+}
+
+a:hover {
+    color: #0058B6;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.1em;
+}

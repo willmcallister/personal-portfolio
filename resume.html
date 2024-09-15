@@ -22,7 +22,7 @@
     <body>
         <!--put your initial page content here-->
         <div class="container">
-            <nav class="navbar navbar-light mb-3">
+            <nav class="navbar navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="">Will McAllister</a>
                 <ul class="nav nav-underline justify-content-end">
@@ -30,10 +30,10 @@
                     <a class="nav-link" href="">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="resume.html">Resume</a>
+                    <a class="nav-link active" href="resume">Resume</a>
                     </li>
                 </ul>
                 </div>
@@ -41,18 +41,28 @@
         </div>
 
         <div class="container body-text">
-            
-            <!-- Simply set the `src` attribute to your MD file and win -->
-            <zero-md src="resume.md"></zero-md>
-
+            <!-- use zero-md to load md, use custom stylesheet -->
+            <zero-md src="md/resume.md">
+                <template>
+                    <link rel="stylesheet" href="css/markdown-style.css" />
+                    <style>
+                        /* remove underline from headers on resume */
+                        h3 { 
+                            text-decoration: none;
+                        }
+                        p {
+                            margin-bottom: 0;
+                        }
+                    </style>
+                </template>
+            </zero-md>
         </div>
 
         <!-- scripts -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
 
-        <!-- Load the element definition -->
-        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+        <!-- zero-md for loading markdown into html -->
+        <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2.5.4/dist/zero-md.min.js"></script>
 
     </body>
 </html>

@@ -1,9 +1,6 @@
 # Hi, I'm Will!
 
 I'm a Junior studying *Cartography/GIS* and *Geography* at the *University of Wisconsin - Madison*. Broadly, I'm interested in using mapping and digital technologies to present information, tell stories, and empower decision-making.
-### Work Experience
-- **GIS Intern** in *Local Government* at the [City of Columbia, MO](https://www.como.gov/information-technology/maps/).
-- **Student Cartographer** in an *Academic Lab* at the [UW Cartography Lab](https://geography.wisc.edu/cartography/).
 
 ### Things I'm involved in
 - [Geography Club UW](https://www.geographyclubuw.com/)

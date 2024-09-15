@@ -18,6 +18,10 @@ body {
     letter-spacing: 1px;
 }
 
+.navbar-light {
+    margin: 0;
+}
+
 .navbar-brand {
     font-family: "BebasNeue";
     letter-spacing: 4px;
