@@ -1,7 +1,7 @@
 @font-face {
     font-family: "BebasNeue";
     /*src: url(personal-portfolio/fonts/BebasNeue-Regular.ttf);*/
-    src: url(personal-portfolio/fonts/BebasNeue-Regular.ttf);
+    src: url(/fonts/BebasNeue-Regular.ttf);
 }
 
 body {
